@@ -12,4 +12,15 @@ class Car < ApplicationRecord
       }
     end
   end
+
+  def self.find(id)
+    results = DB.exec("SELECT * FROM cars WHERE id=#{id};")
+    return  {
+      "id" => results.first["id"].to_i,
+      "make" => results.first["make"],
+      "type" => results.first["type"],
+      "model" => results.first["model"],
+      "manufacturer_id" => results.first["manufacturer_id"].to_i
+    }
+  end
 end
