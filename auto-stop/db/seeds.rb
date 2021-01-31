@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Car.create([{ make: "BMW", type: "Car", model: "SUV", manufacturer_id: 2 },{ make: "BMW", type: "Car", model: "SUV", manufacturer_id: 2 },{ make: "BMW", type: "Car", model: "SUV", manufacturer_id: 2 },{ make: "Benz", type: "Car", model: "SUV", manufacturer_id: 1 }])
+
+Manufacturer.create([{ country: "Germany", name: "MERCEDES BENZ" },{ country: "Germany", name: "BMW"}])
