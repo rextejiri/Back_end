@@ -947,3 +947,93 @@ Migrating to CreateManufacturer (20210131121144)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
   [1m[36mManufacturer Create (0.5ms)[0m  [1m[32mINSERT INTO "manufacturers" ("country", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["country", "Germany"], ["name", "BMW"], ["created_at", "2021-01-31 12:32:22.797739"], ["updated_at", "2021-01-31 12:32:22.797739"]]
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/car" for ::1 at 2021-01-31 06:47:28 -0600
+  
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/car" for ::1 at 2021-01-31 06:54:29 -0600
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NameError (uninitialized constant ApllicationController
+Did you mean?  ApplicationController):
+  
+app/controllers/car_controller.rb:1:in `<main>'
+Started GET "/car" for ::1 at 2021-01-31 06:54:32 -0600
+  
+NameError (uninitialized constant ApllicationController
+Did you mean?  ApplicationController):
+  
+app/controllers/car_controller.rb:1:in `<main>'
+Started GET "/car" for ::1 at 2021-01-31 06:54:33 -0600
+  
+NameError (uninitialized constant ApllicationController
+Did you mean?  ApplicationController):
+  
+app/controllers/car_controller.rb:1:in `<main>'
+Started GET "/car" for ::1 at 2021-01-31 06:54:49 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1026)
+
+
+Started GET "/car" for ::1 at 2021-01-31 06:58:37 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 475)
+
+
+Started GET "/car" for ::1 at 2021-01-31 06:58:38 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 199)
+
+
+Started GET "/car" for ::1 at 2021-01-31 06:58:39 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 197)
+
+
+Started GET "/car" for ::1 at 2021-01-31 06:58:39 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 199)
+
+
+Started GET "/car" for ::1 at 2021-01-31 06:58:40 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 197)
+
+
+Started GET "/car" for ::1 at 2021-01-31 06:58:40 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 197)
+
+
+Started GET "/car" for ::1 at 2021-01-31 06:58:41 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 197)
+
+
+Started GET "/car" for ::1 at 2021-01-31 06:58:47 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 197)
+
+
+Started GET "/car" for ::1 at 2021-01-31 06:58:48 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 197)
+
+
+Started GET "/car" for ::1 at 2021-01-31 06:58:48 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 197)
+
+
+Started GET "/car" for ::1 at 2021-01-31 06:58:49 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 197)
+
+
+Started GET "/car" for ::1 at 2021-01-31 06:58:49 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 197)
+
+
