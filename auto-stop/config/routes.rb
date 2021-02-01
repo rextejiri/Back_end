@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/car/:id', to: 'car#show'
   post '/car', to: 'car#create'
   delete '/car/:id', to: 'car#delete'
+  put '/car/:id', :to => 'car#update'
 end

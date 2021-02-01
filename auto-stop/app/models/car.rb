@@ -41,4 +41,30 @@ class Car < ApplicationRecord
       "manufacturer_id" => results.first["manufacturer_id"].to_i
     }
   end
+
+  def self.delete(id)
+    results = DB.exec("DELETE FROM cars WHERE id = #{id};")
+    return {"deleted" => true}
+  end
+
+  def self.update(id, body)
+    results = DB.exec(
+    <<-SQL
+      UPDATE cars
+      SET make='#{body["make"]}', type='#{body["type"]}',
+      model='#{body["model"]}', manufacturer_id=#{body["manufacturer_id"]}
+      WHERE id=#{id}
+      RETURNING id, make, model, manufacturer_id;
+    SQL
+    )
+    return{
+      "id" => results.first["id"].to_i,
+      "make" => results.first["make"],
+      "type" => results.first["type"],
+      "model" => results.first["model"],
+      "manufacturer_id" => results.first["manufacturer_id"].to_i
+    }
+  end
+
+
 end
