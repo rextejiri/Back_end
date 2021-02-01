@@ -23,4 +23,22 @@ class Car < ApplicationRecord
       "manufacturer_id" => results.first["manufacturer_id"].to_i
     }
   end
+
+  def self.create(body)
+    results = DB.exec(
+      <<-SQL
+      INSERT INTO cars (make, type, model, manufacturer_id)
+      VALUES('#{body["make"]}', '#{body["type"]}',
+      '#{body["model"]}', '#{body["manufacturer_id"]}')
+      RETURNING id, make, type, model, manufacturer_id
+      SQL
+    )
+    return{
+      "id" => results.first["id"].to_i,
+      "make" => results.first["make"],
+      "type" => results.first["type"],
+      "model" => results.first["model"],
+      "manufacturer_id" => results.first["manufacturer_id"].to_i
+    }
+  end
 end
