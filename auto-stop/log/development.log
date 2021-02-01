@@ -1256,3 +1256,9 @@ Processing by CarController#create as */*
 Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 18.5ms | Allocations: 374)
 
 
+Started POST "/car" for ::1 at 2021-02-01 08:14:49 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Luxury", "manufacturer_id"=>"2", "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Luxury", "manufacturer_id"=>"2"}}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 18.6ms | Allocations: 419)
+
+
