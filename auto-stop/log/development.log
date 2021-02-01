@@ -1262,3 +1262,39 @@ Processing by CarController#create as */*
 Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 18.6ms | Allocations: 419)
 
 
+Started GET "/car/5" for ::1 at 2021-02-01 08:19:20 -0600
+Processing by CarController#show as HTML
+  Parameters: {"id"=>"5"}
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started GET "/car" for ::1 at 2021-02-01 08:19:28 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 8ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2064)
+
+
+Started GET "/car" for ::1 at 2021-02-01 08:24:36 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 24ms (Views: 1.4ms | Allocations: 2564)
+
+
+Started GET "/car/4" for ::1 at 2021-02-01 08:24:42 -0600
+Processing by CarController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 200 OK in 4ms (Views: 0.5ms | Allocations: 349)
+
+
+Started DELETE "/car/12" for ::1 at 2021-02-01 08:33:52 -0600
+  
+ActionController::RoutingError (No route matches [DELETE] "/car/12"):
+  
+Started DELETE "/car/1" for ::1 at 2021-02-01 08:34:48 -0600
+  
+ActionController::RoutingError (No route matches [DELETE] "/car/1"):
+  
+Started DELETE "/car/1" for ::1 at 2021-02-01 08:35:35 -0600
+Processing by CarController#delete as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Luxury", "manufacturer_id"=>"2", "id"=>"1", "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Luxury", "manufacturer_id"=>"2"}}
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 23.2ms | Allocations: 320)
+
+

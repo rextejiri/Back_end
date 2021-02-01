@@ -13,4 +13,8 @@ class CarController < ApplicationController
     render json: Car.create(params["car"])
   end
 
+  def delete
+    render json: Car.delete(params["id"])
+  end
+  
 end

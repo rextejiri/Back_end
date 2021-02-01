@@ -41,4 +41,10 @@ class Car < ApplicationRecord
       "manufacturer_id" => results.first["manufacturer_id"].to_i
     }
   end
+
+  def self.delete(id)
+    results = DB.exec("DELETE FROM cars WHERE id = #{id};")
+    return {"deleted" => true}
+  end
+
 end
