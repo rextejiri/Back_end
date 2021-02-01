@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   get '/car', to: 'car#index'
   get '/car/:id', to: 'car#show'
   post '/car', to: 'car#create'
-  delete '/car/:id' to: "car#delete"
+  delete '/car/:id', to: "car#delete"
+  put '/car/:id', to: 'car#update'
 end

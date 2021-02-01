@@ -5,12 +5,16 @@ class CarController < ApplicationController
     render json: Car.all
   end
 
+
   def show
     render json: Car.find(params["id"])
   end
 
+
   def create
     render json: Car.create(params["car"])
   end
+
+
 
 end
