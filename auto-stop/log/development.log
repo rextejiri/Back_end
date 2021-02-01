@@ -1037,3 +1037,264 @@ Processing by CarController#index as HTML
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 197)
 
 
+Started POST "/car" for ::1 at 2021-01-31 08:20:11 -0600
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarController#create as */*
+  Parameters: {"make"=>"BMW", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"BMW", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 5.2ms | Allocations: 1292)
+
+
+  
+ActionController::UnfilteredParameters (unable to convert unpermitted parameters to hash):
+  
+app/controllers/car_controller.rb:13:in `create'
+Started POST "/car" for ::1 at 2021-02-01 07:21:41 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/car_controller.rb:13:in `create'
+  [1m[36mCar Create (9.4ms)[0m  [1m[32mINSERT INTO "cars" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2021-02-01 13:21:41.887289"], ["updated_at", "2021-02-01 13:21:41.887289"]]
+  ↳ app/controllers/car_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/car_controller.rb:13:in `create'
+Completed 200 OK in 41ms (Views: 2.2ms | ActiveRecord: 32.2ms | Allocations: 6672)
+
+
+Started POST "/car" for ::1 at 2021-02-01 07:24:22 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 6.8ms | Allocations: 519)
+
+
+  
+ActionController::UnfilteredParameters (unable to convert unpermitted parameters to hash):
+  
+app/controllers/car_controller.rb:13:in `create'
+Started POST "/car" for ::1 at 2021-02-01 07:27:35 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/car_controller.rb:13:in `create'
+  [1m[36mCar Create (1.2ms)[0m  [1m[32mINSERT INTO "cars" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2021-02-01 13:27:35.310662"], ["updated_at", "2021-02-01 13:27:35.310662"]]
+  ↳ app/controllers/car_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/car_controller.rb:13:in `create'
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 17.3ms | Allocations: 5206)
+
+
+Started POST "/car" for ::1 at 2021-02-01 07:30:53 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 5.5ms | Allocations: 521)
+
+
+  
+PG::NotNullViolation (ERROR:  null value in column "created_at" of relation "cars" violates not-null constraint
+DETAIL:  Failing row contains (29, bmw, Convertible, Sports, 2, null, null).
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:13:in `create'
+Started POST "/car" for ::1 at 2021-02-01 07:31:10 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 5.4ms | Allocations: 1005)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/models/car.rb:31:in `create'
+app/controllers/car_controller.rb:13:in `create'
+Started POST "/car" for ::1 at 2021-02-01 07:31:11 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1021)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/models/car.rb:31:in `create'
+app/controllers/car_controller.rb:13:in `create'
+Started POST "/car" for ::1 at 2021-02-01 07:33:01 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 5.3ms | Allocations: 1000)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/models/car.rb:31:in `create'
+app/controllers/car_controller.rb:13:in `create'
+Started POST "/car" for ::1 at 2021-02-01 07:33:39 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 5.3ms | Allocations: 513)
+
+
+  
+PG::SyntaxError (ERROR:  INSERT has more target columns than expressions
+LINE 1:       INSERT INTO cars (make, type, model, manufacturer_id)
+                                            ^
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:13:in `create'
+Started POST "/car" for ::1 at 2021-02-01 07:34:11 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 5.5ms | Allocations: 513)
+
+
+  
+PG::NotNullViolation (ERROR:  null value in column "created_at" of relation "cars" violates not-null constraint
+DETAIL:  Failing row contains (30, bmw, Convertible, null, null, null, null).
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:13:in `create'
+Started POST "/car" for ::1 at 2021-02-01 07:35:21 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 5.6ms | Allocations: 513)
+
+
+  
+PG::NotNullViolation (ERROR:  null value in column "created_at" of relation "cars" violates not-null constraint
+DETAIL:  Failing row contains (31, bmw, Convertible, null, null, null, null).
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:13:in `create'
+Started POST "/car" for ::1 at 2021-02-01 07:35:59 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 533)
+
+
+  
+PG::NotNullViolation (ERROR:  null value in column "created_at" of relation "cars" violates not-null constraint
+DETAIL:  Failing row contains (32, bmw, Convertible, null, null, null, null).
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:13:in `create'
+Started POST "/car" for ::1 at 2021-02-01 07:36:21 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 6.0ms | Allocations: 513)
+
+
+  
+PG::NotNullViolation (ERROR:  null value in column "created_at" of relation "cars" violates not-null constraint
+DETAIL:  Failing row contains (33, bmw, Convertible, null, null, null, null).
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:13:in `create'
+Started POST "/car" for ::1 at 2021-02-01 07:37:26 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 10.3ms | Allocations: 513)
+
+
+  
+PG::NotNullViolation (ERROR:  null value in column "created_at" of relation "cars" violates not-null constraint
+DETAIL:  Failing row contains (34, bmw, Convertible, null, null, null, null).
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:13:in `create'
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCar Create (0.9ms)[0m  [1m[32mINSERT INTO "cars" ("make", "type", "model", "manufacturer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["make", "BMW"], ["type", "Car"], ["model", "SUV"], ["manufacturer_id", 2], ["created_at", "2021-02-01 13:54:26.800694"], ["updated_at", "2021-02-01 13:54:26.800694"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCar Create (0.2ms)[0m  [1m[32mINSERT INTO "cars" ("make", "type", "model", "manufacturer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["make", "BMW"], ["type", "Car"], ["model", "SUV"], ["manufacturer_id", 2], ["created_at", "2021-02-01 13:54:26.805629"], ["updated_at", "2021-02-01 13:54:26.805629"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCar Create (0.8ms)[0m  [1m[32mINSERT INTO "cars" ("make", "type", "model", "manufacturer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["make", "BMW"], ["type", "Car"], ["model", "SUV"], ["manufacturer_id", 2], ["created_at", "2021-02-01 13:54:26.809787"], ["updated_at", "2021-02-01 13:54:26.809787"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCar Create (1.7ms)[0m  [1m[32mINSERT INTO "cars" ("make", "type", "model", "manufacturer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["make", "Benz"], ["type", "Car"], ["model", "SUV"], ["manufacturer_id", 1], ["created_at", "2021-02-01 13:54:26.816733"], ["updated_at", "2021-02-01 13:54:26.816733"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mManufacturer Create (7.8ms)[0m  [1m[32mINSERT INTO "manufacturers" ("country", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["country", "Germany"], ["name", "MERCEDES BENZ"], ["created_at", "2021-02-01 13:54:26.854244"], ["updated_at", "2021-02-01 13:54:26.854244"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mManufacturer Create (1.6ms)[0m  [1m[32mINSERT INTO "manufacturers" ("country", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["country", "Germany"], ["name", "BMW"], ["created_at", "2021-02-01 13:54:26.870683"], ["updated_at", "2021-02-01 13:54:26.870683"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCar Create (3.1ms)[0m  [1m[32mINSERT INTO "cars" ("make", "type", "model", "manufacturer_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["make", "BMW"], ["type", "Car"], ["model", "SUV"], ["manufacturer_id", 2]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCar Create (0.6ms)[0m  [1m[32mINSERT INTO "cars" ("make", "type", "model", "manufacturer_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["make", "BMW"], ["type", "Car"], ["model", "SUV"], ["manufacturer_id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCar Create (0.6ms)[0m  [1m[32mINSERT INTO "cars" ("make", "type", "model", "manufacturer_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["make", "BMW"], ["type", "Car"], ["model", "SUV"], ["manufacturer_id", 2]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCar Create (0.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "type", "model", "manufacturer_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["make", "Benz"], ["type", "Car"], ["model", "SUV"], ["manufacturer_id", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mManufacturer Create (1.6ms)[0m  [1m[32mINSERT INTO "manufacturers" ("country", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["country", "Germany"], ["name", "MERCEDES BENZ"], ["created_at", "2021-02-01 14:07:02.486879"], ["updated_at", "2021-02-01 14:07:02.486879"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mManufacturer Create (1.0ms)[0m  [1m[32mINSERT INTO "manufacturers" ("country", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["country", "Germany"], ["name", "BMW"], ["created_at", "2021-02-01 14:07:02.495324"], ["updated_at", "2021-02-01 14:07:02.495324"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/car" for ::1 at 2021-02-01 08:09:22 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "car"=>{"make"=>"bmw", "type"=>"Convertible"}}
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 18.5ms | Allocations: 374)
+
+
+Started POST "/car" for ::1 at 2021-02-01 08:14:49 -0600
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Luxury", "manufacturer_id"=>"2", "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Luxury", "manufacturer_id"=>"2"}}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 18.6ms | Allocations: 419)
+
+
+Started GET "/car/5" for ::1 at 2021-02-01 08:19:20 -0600
+Processing by CarController#show as HTML
+  Parameters: {"id"=>"5"}
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started GET "/car" for ::1 at 2021-02-01 08:19:28 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 8ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2064)
+
+
+Started GET "/car" for ::1 at 2021-02-01 08:24:36 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 24ms (Views: 1.4ms | Allocations: 2564)
+
+
+Started GET "/car/4" for ::1 at 2021-02-01 08:24:42 -0600
+Processing by CarController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 200 OK in 4ms (Views: 0.5ms | Allocations: 349)
+
+
+Started DELETE "/car/12" for ::1 at 2021-02-01 08:33:52 -0600
+  
+ActionController::RoutingError (No route matches [DELETE] "/car/12"):
+  
+Started DELETE "/car/1" for ::1 at 2021-02-01 08:34:48 -0600
+  
+ActionController::RoutingError (No route matches [DELETE] "/car/1"):
+  
+Started DELETE "/car/1" for ::1 at 2021-02-01 08:35:35 -0600
+Processing by CarController#delete as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Luxury", "manufacturer_id"=>"2", "id"=>"1", "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Luxury", "manufacturer_id"=>"2"}}
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 23.2ms | Allocations: 320)
+
+
