@@ -10,7 +10,7 @@ class CarController < ApplicationController
   end
 
   def create
-    render json: Car.create(params["cars"])
+    render json: Car.create(params["car"])
   end
 
 end
