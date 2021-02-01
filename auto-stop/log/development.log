@@ -1037,3 +1037,27 @@ Processing by CarController#index as HTML
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 197)
 
 
+Started POST "/car" for ::1 at 2021-01-31 08:20:11 -0600
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarController#create as */*
+  Parameters: {"make"=>"BMW", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"BMW", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 5.2ms | Allocations: 1292)
+
+
+  
+ActionController::UnfilteredParameters (unable to convert unpermitted parameters to hash):
+  
+app/controllers/car_controller.rb:13:in `create'
+Started POST "/car" for ::1 at 2021-02-01 07:21:41 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarController#create as */*
+  Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2, "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Sports", "manufacturer_id"=>2}}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/car_controller.rb:13:in `create'
+  [1m[36mCar Create (9.4ms)[0m  [1m[32mINSERT INTO "cars" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2021-02-01 13:21:41.887289"], ["updated_at", "2021-02-01 13:21:41.887289"]]
+  ↳ app/controllers/car_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/car_controller.rb:13:in `create'
+Completed 200 OK in 41ms (Views: 2.2ms | ActiveRecord: 32.2ms | Allocations: 6672)
+
+
