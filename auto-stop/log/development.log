@@ -160,12 +160,12 @@ Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 339)
 
 
 Started GET "/" for ::1 at 2021-01-30 12:19:58 -0600
-  
+
 ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
@@ -726,12 +726,12 @@ Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 339)
 
 
 Started GET "/" for ::1 at 2021-01-30 12:21:17 -0600
-  
+
 ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
@@ -948,29 +948,29 @@ Migrating to CreateManufacturer (20210131121144)
   [1m[36mManufacturer Create (0.5ms)[0m  [1m[32mINSERT INTO "manufacturers" ("country", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["country", "Germany"], ["name", "BMW"], ["created_at", "2021-01-31 12:32:22.797739"], ["updated_at", "2021-01-31 12:32:22.797739"]]
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
 Started GET "/car" for ::1 at 2021-01-31 06:47:28 -0600
-  
+
 ArgumentError (Missing :action key on routes definition, please check your routes.):
-  
+
 config/routes.rb:3:in `block in <main>'
 config/routes.rb:1:in `<main>'
 Started GET "/car" for ::1 at 2021-01-31 06:54:29 -0600
   [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 NameError (uninitialized constant ApllicationController
 Did you mean?  ApplicationController):
-  
+
 app/controllers/car_controller.rb:1:in `<main>'
 Started GET "/car" for ::1 at 2021-01-31 06:54:32 -0600
-  
+
 NameError (uninitialized constant ApllicationController
 Did you mean?  ApplicationController):
-  
+
 app/controllers/car_controller.rb:1:in `<main>'
 Started GET "/car" for ::1 at 2021-01-31 06:54:33 -0600
-  
+
 NameError (uninitialized constant ApllicationController
 Did you mean?  ApplicationController):
-  
+
 app/controllers/car_controller.rb:1:in `<main>'
 Started GET "/car" for ::1 at 2021-01-31 06:54:49 -0600
 Processing by CarController#index as HTML
@@ -1039,12 +1039,12 @@ Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 197)
 
 <<<<<<< HEAD
 Started GET "/" for ::1 at 2021-01-31 09:17:40 -0700
-  
+
 ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
@@ -1101,12 +1101,12 @@ puma (5.2.0) lib/puma/request.rb:75:in `handle_request'
 puma (5.2.0) lib/puma/server.rb:432:in `process_client'
 puma (5.2.0) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
 Started GET "/" for ::1 at 2021-01-31 09:17:41 -0700
-  
+
 ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
@@ -1163,12 +1163,12 @@ puma (5.2.0) lib/puma/request.rb:75:in `handle_request'
 puma (5.2.0) lib/puma/server.rb:432:in `process_client'
 puma (5.2.0) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
 Started GET "/car" for ::1 at 2021-01-31 09:26:40 -0700
-  
+
 ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
@@ -1225,12 +1225,12 @@ puma (5.2.0) lib/puma/request.rb:75:in `handle_request'
 puma (5.2.0) lib/puma/server.rb:432:in `process_client'
 puma (5.2.0) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
 Started GET "/" for ::1 at 2021-02-01 12:20:38 -0700
-  
+
 ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
@@ -1287,12 +1287,12 @@ puma (5.2.0) lib/puma/request.rb:75:in `handle_request'
 puma (5.2.0) lib/puma/server.rb:432:in `process_client'
 puma (5.2.0) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
 Started GET "/" for ::1 at 2021-02-01 12:21:07 -0700
-  
+
 ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
@@ -1349,12 +1349,12 @@ puma (5.2.0) lib/puma/request.rb:75:in `handle_request'
 puma (5.2.0) lib/puma/server.rb:432:in `process_client'
 puma (5.2.0) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
 Started GET "/cars" for ::1 at 2021-02-01 12:21:29 -0700
-  
+
 ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
@@ -1411,12 +1411,12 @@ puma (5.2.0) lib/puma/request.rb:75:in `handle_request'
 puma (5.2.0) lib/puma/server.rb:432:in `process_client'
 puma (5.2.0) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
 Started GET "/cars" for ::1 at 2021-02-01 12:21:32 -0700
-  
+
 ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
 activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
@@ -1480,9 +1480,9 @@ Processing by CarController#create as */*
 Completed 500 Internal Server Error in 6ms (ActiveRecord: 5.2ms | Allocations: 1292)
 
 
-  
+
 ActionController::UnfilteredParameters (unable to convert unpermitted parameters to hash):
-  
+
 app/controllers/car_controller.rb:13:in `create'
 Started POST "/car" for ::1 at 2021-02-01 07:21:41 -0600
   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -1503,9 +1503,9 @@ Processing by CarController#create as */*
 Completed 500 Internal Server Error in 1ms (ActiveRecord: 6.8ms | Allocations: 519)
 
 
-  
+
 ActionController::UnfilteredParameters (unable to convert unpermitted parameters to hash):
-  
+
 app/controllers/car_controller.rb:13:in `create'
 Started POST "/car" for ::1 at 2021-02-01 07:27:35 -0600
 Processing by CarController#create as */*
@@ -1525,11 +1525,11 @@ Processing by CarController#create as */*
 Completed 500 Internal Server Error in 8ms (ActiveRecord: 5.5ms | Allocations: 521)
 
 
-  
+
 PG::NotNullViolation (ERROR:  null value in column "created_at" of relation "cars" violates not-null constraint
 DETAIL:  Failing row contains (29, bmw, Convertible, Sports, 2, null, null).
 ):
-  
+
 app/models/car.rb:28:in `create'
 app/controllers/car_controller.rb:13:in `create'
 Started POST "/car" for ::1 at 2021-02-01 07:31:10 -0600
@@ -1538,9 +1538,9 @@ Processing by CarController#create as */*
 Completed 500 Internal Server Error in 1ms (ActiveRecord: 5.4ms | Allocations: 1005)
 
 
-  
+
 NoMethodError (undefined method `[]' for nil:NilClass):
-  
+
 app/models/car.rb:31:in `create'
 app/controllers/car_controller.rb:13:in `create'
 Started POST "/car" for ::1 at 2021-02-01 07:31:11 -0600
@@ -1549,9 +1549,9 @@ Processing by CarController#create as */*
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1021)
 
 
-  
+
 NoMethodError (undefined method `[]' for nil:NilClass):
-  
+
 app/models/car.rb:31:in `create'
 app/controllers/car_controller.rb:13:in `create'
 Started POST "/car" for ::1 at 2021-02-01 07:33:01 -0600
@@ -1560,9 +1560,9 @@ Processing by CarController#create as */*
 Completed 500 Internal Server Error in 1ms (ActiveRecord: 5.3ms | Allocations: 1000)
 
 
-  
+
 NoMethodError (undefined method `[]' for nil:NilClass):
-  
+
 app/models/car.rb:31:in `create'
 app/controllers/car_controller.rb:13:in `create'
 Started POST "/car" for ::1 at 2021-02-01 07:33:39 -0600
@@ -1571,12 +1571,12 @@ Processing by CarController#create as */*
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 5.3ms | Allocations: 513)
 
 
-  
+
 PG::SyntaxError (ERROR:  INSERT has more target columns than expressions
 LINE 1:       INSERT INTO cars (make, type, model, manufacturer_id)
                                             ^
 ):
-  
+
 app/models/car.rb:28:in `create'
 app/controllers/car_controller.rb:13:in `create'
 Started POST "/car" for ::1 at 2021-02-01 07:34:11 -0600
@@ -1585,11 +1585,11 @@ Processing by CarController#create as */*
 Completed 500 Internal Server Error in 5ms (ActiveRecord: 5.5ms | Allocations: 513)
 
 
-  
+
 PG::NotNullViolation (ERROR:  null value in column "created_at" of relation "cars" violates not-null constraint
 DETAIL:  Failing row contains (30, bmw, Convertible, null, null, null, null).
 ):
-  
+
 app/models/car.rb:28:in `create'
 app/controllers/car_controller.rb:13:in `create'
 Started POST "/car" for ::1 at 2021-02-01 07:35:21 -0600
@@ -1598,11 +1598,11 @@ Processing by CarController#create as */*
 Completed 500 Internal Server Error in 4ms (ActiveRecord: 5.6ms | Allocations: 513)
 
 
-  
+
 PG::NotNullViolation (ERROR:  null value in column "created_at" of relation "cars" violates not-null constraint
 DETAIL:  Failing row contains (31, bmw, Convertible, null, null, null, null).
 ):
-  
+
 app/models/car.rb:28:in `create'
 app/controllers/car_controller.rb:13:in `create'
 Started POST "/car" for ::1 at 2021-02-01 07:35:59 -0600
@@ -1611,11 +1611,11 @@ Processing by CarController#create as */*
 Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 533)
 
 
-  
+
 PG::NotNullViolation (ERROR:  null value in column "created_at" of relation "cars" violates not-null constraint
 DETAIL:  Failing row contains (32, bmw, Convertible, null, null, null, null).
 ):
-  
+
 app/models/car.rb:28:in `create'
 app/controllers/car_controller.rb:13:in `create'
 Started POST "/car" for ::1 at 2021-02-01 07:36:21 -0600
@@ -1624,11 +1624,11 @@ Processing by CarController#create as */*
 Completed 500 Internal Server Error in 4ms (ActiveRecord: 6.0ms | Allocations: 513)
 
 
-  
+
 PG::NotNullViolation (ERROR:  null value in column "created_at" of relation "cars" violates not-null constraint
 DETAIL:  Failing row contains (33, bmw, Convertible, null, null, null, null).
 ):
-  
+
 app/models/car.rb:28:in `create'
 app/controllers/car_controller.rb:13:in `create'
 Started POST "/car" for ::1 at 2021-02-01 07:37:26 -0600
@@ -1637,11 +1637,11 @@ Processing by CarController#create as */*
 Completed 500 Internal Server Error in 4ms (ActiveRecord: 10.3ms | Allocations: 513)
 
 
-  
+
 PG::NotNullViolation (ERROR:  null value in column "created_at" of relation "cars" violates not-null constraint
 DETAIL:  Failing row contains (34, bmw, Convertible, null, null, null, null).
 ):
-  
+
 app/models/car.rb:28:in `create'
 app/controllers/car_controller.rb:13:in `create'
   [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -1696,6 +1696,3 @@ Started POST "/car" for ::1 at 2021-02-01 08:14:49 -0600
 Processing by CarController#create as */*
   Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Luxury", "manufacturer_id"=>"2", "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Luxury", "manufacturer_id"=>"2"}}
 Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 18.6ms | Allocations: 419)
-
-
->>>>>>> origin/dev
