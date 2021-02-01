@@ -1696,3 +1696,14 @@ Started POST "/car" for ::1 at 2021-02-01 08:14:49 -0600
 Processing by CarController#create as */*
   Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Luxury", "manufacturer_id"=>"2", "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Luxury", "manufacturer_id"=>"2"}}
 Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 18.6ms | Allocations: 419)
+Started GET "/car" for 127.0.0.1 at 2021-02-01 15:26:44 -0700
+  [1m[35m (77.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarController#index as HTML
+Completed 200 OK in 172ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 1765)
+
+
+Started GET "/car" for ::1 at 2021-02-01 15:27:20 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 11ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 266)
+
+
