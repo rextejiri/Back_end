@@ -8,7 +8,8 @@ class Car < ApplicationRecord
         "make" => result["make"],
         "type" => result["type"],
         "model" => result["model"],
-        "manufacturer_id" => result["manufacturer_id"].to_i
+        "manufacturer_id" => result["manufacturer_id"].to_i,
+        "img" => result["img"]
       }
     end
   end
@@ -20,7 +21,8 @@ class Car < ApplicationRecord
       "make" => results.first["make"],
       "type" => results.first["type"],
       "model" => results.first["model"],
-      "manufacturer_id" => results.first["manufacturer_id"].to_i
+      "manufacturer_id" => results.first["manufacturer_id"].to_i,
+      "img" => results.first["img"]
     }
   end
 
@@ -38,7 +40,8 @@ class Car < ApplicationRecord
       "make" => results.first["make"],
       "type" => results.first["type"],
       "model" => results.first["model"],
-      "manufacturer_id" => results.first["manufacturer_id"].to_i
+      "manufacturer_id" => results.first["manufacturer_id"].to_i,
+      "img" => results.first["img"]
     }
   end
 
@@ -52,9 +55,9 @@ class Car < ApplicationRecord
     <<-SQL
       UPDATE cars
       SET make='#{body["make"]}', type='#{body["type"]}',
-      model='#{body["model"]}', manufacturer_id=#{body["manufacturer_id"]}
+      model='#{body["model"]}', manufacturer_id=#{body["manufacturer_id"]}, img='#{body["img"]}
       WHERE id=#{id}
-      RETURNING id, make, model, manufacturer_id;
+      RETURNING id, make, model, manufacturer_id, img;
     SQL
     )
     return{
@@ -62,7 +65,8 @@ class Car < ApplicationRecord
       "make" => results.first["make"],
       "type" => results.first["type"],
       "model" => results.first["model"],
-      "manufacturer_id" => results.first["manufacturer_id"].to_i
+      "manufacturer_id" => results.first["manufacturer_id"].to_i,
+      "img" => results.first["img"]
     }
   end
 
@@ -86,7 +90,8 @@ class Car < ApplicationRecord
       "make" => results.first["make"],
       "type" => results.first["type"],
       "model" => results.first["model"],
-      "manufacturer_id" => results.first["manufacturer_id"].to_i
+      "manufacturer_id" => results.first["manufacturer_id"].to_i,
+      "img" => results.first["img"]
     }
   end
 
