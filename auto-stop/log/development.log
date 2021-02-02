@@ -1707,3 +1707,1273 @@ Processing by CarController#index as HTML
 Completed 200 OK in 11ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 266)
 
 
+Started GET "/car" for ::1 at 2021-02-01 16:48:43 -0700
+Started GET "/car" for ::1 at 2021-02-01 16:48:43 -0700
+Started GET "/car" for ::1 at 2021-02-01 16:48:43 -0700
+  [1m[35m (7.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarController#index as HTML
+Processing by CarController#index as HTML
+Processing by CarController#index as HTML
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms | Allocations: 1711)
+
+
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms | Allocations: 2131)
+
+
+  
+NoMethodError (undefined method `map' for nil:NilClass):
+  
+app/models/car.rb:5:in `all'
+app/controllers/car_controller.rb:5:in `index'
+  
+PG::ConnectionBad (PQsocket() can't get socket descriptor):
+  
+app/models/car.rb:4:in `all'
+app/controllers/car_controller.rb:5:in `index'
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 0.0ms | Allocations: 4128)
+
+
+  
+PG::ConnectionBad (PQsocket() can't get socket descriptor):
+  
+app/models/car.rb:4:in `all'
+app/controllers/car_controller.rb:5:in `index'
+Started GET "/car" for ::1 at 2021-02-01 16:48:48 -0700
+Processing by CarController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 531)
+
+
+  
+PG::UnableToSend (no connection to the server
+):
+  
+app/models/car.rb:4:in `all'
+app/controllers/car_controller.rb:5:in `index'
+Started GET "/car" for ::1 at 2021-02-01 16:51:17 -0700
+  [1m[35m (35.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarController#index as HTML
+Completed 200 OK in 224ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 1466)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-01 16:51:24 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"car", "type"=>"cool", "model"=>"big", "manufacturer_id"=>"idk", "cars"=>[], "car"=>{"make"=>"car", "type"=>"cool", "model"=>"big", "manufacturer_id"=>"idk"}}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 7.5ms | Allocations: 540)
+
+
+  
+PG::InvalidTextRepresentation (ERROR:  invalid input syntax for type integer: "idk"
+LINE 3:       'big', 'idk')
+                     ^
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started GET "/car" for ::1 at 2021-02-01 16:51:35 -0700
+Processing by CarController#index as HTML
+Started GET "/car" for 127.0.0.1 at 2021-02-01 16:51:35 -0700
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 625)
+
+
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 277)
+
+
+Started GET "/car" for ::1 at 2021-02-01 16:51:37 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 266)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 16:51:41 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 264)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-01 16:51:45 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"sdvs", "type"=>"dv", "model"=>"sbv", "manufacturer_id"=>"sb", "cars"=>[], "car"=>{"make"=>"sdvs", "type"=>"dv", "model"=>"sbv", "manufacturer_id"=>"sb"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 539)
+
+
+  
+PG::InvalidTextRepresentation (ERROR:  invalid input syntax for type integer: "sb"
+LINE 3:       'sbv', 'sb')
+                     ^
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started POST "/car" for 127.0.0.1 at 2021-02-01 16:51:46 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"sdvs", "type"=>"dv", "model"=>"sbv", "manufacturer_id"=>"sb", "cars"=>[], "car"=>{"make"=>"sdvs", "type"=>"dv", "model"=>"sbv", "manufacturer_id"=>"sb"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 536)
+
+
+  
+PG::InvalidTextRepresentation (ERROR:  invalid input syntax for type integer: "sb"
+LINE 3:       'sbv', 'sb')
+                     ^
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started POST "/car" for 127.0.0.1 at 2021-02-01 16:51:46 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"sdvs", "type"=>"dv", "model"=>"sbv", "manufacturer_id"=>"sb", "cars"=>[], "car"=>{"make"=>"sdvs", "type"=>"dv", "model"=>"sbv", "manufacturer_id"=>"sb"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 533)
+
+
+  
+PG::InvalidTextRepresentation (ERROR:  invalid input syntax for type integer: "sb"
+LINE 3:       'sbv', 'sb')
+                     ^
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started GET "/car" for ::1 at 2021-02-01 16:51:49 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 357)
+
+
+Started GET "/car" for ::1 at 2021-02-01 16:51:50 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 264)
+
+
+Started GET "/car" for ::1 at 2021-02-01 16:51:50 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 6ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 264)
+
+
+Started GET "/car" for ::1 at 2021-02-01 16:51:50 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 265)
+
+
+Started GET "/car" for ::1 at 2021-02-01 16:53:00 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 11ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 264)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-01 16:53:06 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"sdvs", "type"=>"dv", "model"=>"sbv", "manufacturer_id"=>"sb", "cars"=>[], "car"=>{"make"=>"sdvs", "type"=>"dv", "model"=>"sbv", "manufacturer_id"=>"sb"}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 533)
+
+
+  
+PG::InvalidTextRepresentation (ERROR:  invalid input syntax for type integer: "sb"
+LINE 3:       'sbv', 'sb')
+                     ^
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started POST "/car" for 127.0.0.1 at 2021-02-01 16:53:33 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"sdvs", "type"=>"dv", "model"=>"sbv", "manufacturer_id"=>"1", "cars"=>[], "car"=>{"make"=>"sdvs", "type"=>"dv", "model"=>"sbv", "manufacturer_id"=>"1"}}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 533)
+
+
+  
+PG::NotNullViolation (ERROR:  null value in column "created_at" of relation "cars" violates not-null constraint
+DETAIL:  Failing row contains (2, sdvs, dv, sbv, 1, null, null).
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started GET "/car" for 127.0.0.1 at 2021-02-01 16:54:02 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 73ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 665)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-01 16:54:10 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"toyota", "type"=>"prius", "model"=>"prius", "manufacturer_id"=>"1", "cars"=>[], "car"=>{"make"=>"toyota", "type"=>"prius", "model"=>"prius", "manufacturer_id"=>"1"}}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 23.2ms | Allocations: 533)
+
+
+  
+PG::NotNullViolation (ERROR:  null value in column "created_at" of relation "cars" violates not-null constraint
+DETAIL:  Failing row contains (3, toyota, prius, prius, 1, null, null).
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started GET "/car" for ::1 at 2021-02-01 16:54:37 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 264)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 16:55:41 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 264)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-01 16:55:50 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"toyota", "type"=>"SEDAN", "model"=>"prius", "manufacturer_id"=>"1", "cars"=>[], "car"=>{"make"=>"toyota", "type"=>"SEDAN", "model"=>"prius", "manufacturer_id"=>"1"}}
+Completed 200 OK in 55ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 378)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 16:55:50 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 316)
+
+
+Started GET "/car" for ::1 at 2021-02-01 16:56:21 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 20ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 316)
+
+
+Started PUT "/car/4" for 127.0.0.1 at 2021-02-01 16:57:05 -0700
+Processing by CarController#update as HTML
+  Parameters: {"make"=>"bmw", "type"=>"car", "model"=>"idk", "manufacturer_id"=>"", "cars"=>[{"id"=>4, "make"=>"toyota", "type"=>"SEDAN", "model"=>"prius", "manufacturer_id"=>1}], "id"=>"4", "car"=>{"make"=>"bmw", "type"=>"car", "model"=>"idk", "manufacturer_id"=>""}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 534)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "WHERE"
+LINE 4:         WHERE id=4
+                ^
+):
+  
+app/models/car.rb:75:in `update'
+app/controllers/car_controller.rb:24:in `update'
+Started GET "/car" for 127.0.0.1 at 2021-02-01 17:04:54 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 61ms (Views: 9.9ms | Allocations: 317)
+
+
+Started PUT "/car/4" for 127.0.0.1 at 2021-02-01 17:05:04 -0700
+Processing by CarController#update as HTML
+  Parameters: {"make"=>"idk", "type"=>"idk", "model"=>"idk", "manufacturer_id"=>"4", "cars"=>[{"id"=>4, "make"=>"toyota", "type"=>"SEDAN", "model"=>"prius", "manufacturer_id"=>1}], "id"=>"4", "car"=>{"make"=>"idk", "type"=>"idk", "model"=>"idk", "manufacturer_id"=>"4"}}
+Completed 200 OK in 22ms (Views: 1.0ms | Allocations: 365)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 17:05:04 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 8ms (Views: 0.9ms | Allocations: 316)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-01 18:57:29 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Nissan", "type"=>"Coupe", "model"=>"370z Nismo", "manufacturer_id"=>"2", "cars"=>[{"id"=>4, "make"=>"idk", "type"=>"idk", "model"=>"idk", "manufacturer_id"=>4}], "car"=>{"make"=>"Nissan", "type"=>"Coupe", "model"=>"370z Nismo", "manufacturer_id"=>"2"}}
+Completed 200 OK in 31ms (Views: 2.9ms | Allocations: 375)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 18:57:29 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.4ms | Allocations: 363)
+
+
+Started GET "/car" for ::1 at 2021-02-01 18:57:44 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.5ms | Allocations: 363)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:13:14 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 88ms (Views: 5.9ms | Allocations: 363)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:13:16 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.6ms | Allocations: 363)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:13:35 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 1.2ms | Allocations: 363)
+
+
+Started GET "/main.css" for 127.0.0.1 at 2021-02-01 19:14:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:14:25 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 5ms (Views: 0.7ms | Allocations: 363)
+
+
+Started GET "/App.css" for 127.0.0.1 at 2021-02-01 19:15:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:15:44 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.4ms | Allocations: 364)
+
+
+Started GET "/App.css" for 127.0.0.1 at 2021-02-01 19:15:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:15:45 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.4ms | Allocations: 363)
+
+
+Started GET "/App.css" for 127.0.0.1 at 2021-02-01 19:15:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:15:46 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 1.7ms | Allocations: 363)
+
+
+Started GET "/src/App.css" for 127.0.0.1 at 2021-02-01 19:15:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:15:56 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 8ms (Views: 1.5ms | Allocations: 364)
+
+
+Started GET "/src/App.css" for 127.0.0.1 at 2021-02-01 19:15:56 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:15:57 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.4ms | Allocations: 363)
+
+
+Started GET "/src/App.css" for 127.0.0.1 at 2021-02-01 19:15:57 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:15:58 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 363)
+
+
+Started GET "/src/App.css" for 127.0.0.1 at 2021-02-01 19:16:02 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:16:03 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.4ms | Allocations: 364)
+
+
+Started GET "/src/App.css" for 127.0.0.1 at 2021-02-01 19:16:03 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:16:04 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.3ms | Allocations: 363)
+
+
+Started GET "/src/App.css" for 127.0.0.1 at 2021-02-01 19:16:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:16:04 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 363)
+
+
+Started GET "/src/App.css" for 127.0.0.1 at 2021-02-01 19:16:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:17:01 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 14ms (Views: 1.2ms | Allocations: 364)
+
+
+Started GET "/src/App.css" for 127.0.0.1 at 2021-02-01 19:17:01 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:17:02 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.4ms | Allocations: 363)
+
+
+Started GET "/src/App.css" for 127.0.0.1 at 2021-02-01 19:17:02 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:17:02 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.4ms | Allocations: 363)
+
+
+Started DELETE "/car/4" for 127.0.0.1 at 2021-02-01 19:17:07 -0700
+Processing by CarController#delete as HTML
+  Parameters: {"id"=>"4"}
+Completed 200 OK in 13ms (Views: 0.3ms | Allocations: 276)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:17:07 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.3ms | Allocations: 316)
+
+
+Started DELETE "/car/5" for 127.0.0.1 at 2021-02-01 19:17:08 -0700
+Processing by CarController#delete as HTML
+  Parameters: {"id"=>"5"}
+Completed 200 OK in 5ms (Views: 0.2ms | Allocations: 276)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:17:08 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 5ms (Views: 1.0ms | Allocations: 264)
+
+
+Started GET "/src/App.css" for 127.0.0.1 at 2021-02-01 19:17:10 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:17:11 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 264)
+
+
+Started GET "/src/App.css" for 127.0.0.1 at 2021-02-01 19:18:16 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:18:17 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | Allocations: 265)
+
+
+Started GET "/src/App.css" for 127.0.0.1 at 2021-02-01 19:18:18 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/App.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:18:19 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.2ms | Allocations: 264)
+
+
+Started GET "/src/css/main.scss" for 127.0.0.1 at 2021-02-01 19:37:52 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.scss"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:37:52 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 10ms (Views: 2.0ms | Allocations: 264)
+
+
+Started GET "/src/css/main.scss" for 127.0.0.1 at 2021-02-01 19:37:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.scss"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:37:55 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 5ms (Views: 0.5ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:38:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:38:46 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.4ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:38:50 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:38:50 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 6ms (Views: 1.3ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:38:51 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:38:51 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.2ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:39:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:39:25 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:40:01 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:40:02 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:40:03 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:40:03 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | Allocations: 264)
+
+
+Started GET "/css/main.css" for 127.0.0.1 at 2021-02-01 19:41:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:41:23 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.5ms | Allocations: 264)
+
+
+Started GET "/css/main.css" for 127.0.0.1 at 2021-02-01 19:41:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:41:26 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | Allocations: 265)
+
+
+Started GET "/css/main.css" for 127.0.0.1 at 2021-02-01 19:41:28 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:41:28 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.4ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:41:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:41:39 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.3ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:41:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:41:40 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 5ms (Views: 0.2ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:41:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:41:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:41:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:41:42 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 5ms (Views: 0.2ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:42:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:42:37 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.4ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:42:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:42:41 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.3ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:42:42 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:42:42 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:43:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:43:36 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 8ms (Views: 0.4ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:43:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:43:43 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 264)
+
+
+Started GET "/src/css/main.css" for 127.0.0.1 at 2021-02-01 19:43:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/css/main.css"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:43:44 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | Allocations: 264)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:47:36 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | Allocations: 264)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:48:18 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 264)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:54:10 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | Allocations: 264)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:54:49 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 5ms (Views: 2.2ms | Allocations: 265)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-01 19:56:00 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"BMW", "type"=>"Coupe", "model"=>"M2", "manufacturer_id"=>"1", "cars"=>[], "car"=>{"make"=>"BMW", "type"=>"Coupe", "model"=>"M2", "manufacturer_id"=>"1"}}
+Completed 200 OK in 15ms (Views: 1.2ms | Allocations: 374)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:56:00 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.5ms | Allocations: 316)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-02-01 19:56:54 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-02-01 19:57:52 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-02-01 19:57:53 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-02-01 19:58:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-02-01 19:58:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-02-01 19:58:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-02-01 19:58:42 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 19:59:07 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 6ms (Views: 0.9ms | Allocations: 316)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-02-01 20:00:47 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+MiniProfiler storage failure: No space left on device @ io_write - /Users/Jas/Documents/projects/project_4/Back_end/auto-stop/tmp/miniprofiler/mp_timers_i4l9kyn1fe6gq2u170ai
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:01:23 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 8ms (Views: 1.5ms | Allocations: 316)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:07:15 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 11ms (Views: 2.7ms | Allocations: 316)
+
+
+MiniProfiler storage failure: No space left on device @ io_write - /Users/Jas/Documents/projects/project_4/Back_end/auto-stop/tmp/miniprofiler/mp_timers_grlo02rff9tan3jep06z
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:08:02 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.5ms | Allocations: 316)
+
+
+MiniProfiler storage failure: No space left on device @ io_write - /Users/Jas/Documents/projects/project_4/Back_end/auto-stop/tmp/miniprofiler/mp_timers_j439qte4fkzpon2vr992
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:08:23 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 5ms (Views: 1.9ms | Allocations: 317)
+
+
+MiniProfiler storage failure: No space left on device @ io_write - /Users/Jas/Documents/projects/project_4/Back_end/auto-stop/tmp/miniprofiler/mp_timers_d454jnjuj4t5qejko44b
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:08:24 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 5ms (Views: 0.6ms | Allocations: 316)
+
+
+MiniProfiler storage failure: No space left on device @ io_write - /Users/Jas/Documents/projects/project_4/Back_end/auto-stop/tmp/miniprofiler/mp_timers_98xe8ke8iwyqwhz74b7v
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:08:47 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.4ms | Allocations: 316)
+
+
+MiniProfiler storage failure: No space left on device @ io_write - /Users/Jas/Documents/projects/project_4/Back_end/auto-stop/tmp/miniprofiler/mp_timers_lsyargk972ruwpig52zi
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:26:00 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 78ms (Views: 4.9ms | Allocations: 316)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:28:02 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 33ms (Views: 3.5ms | Allocations: 316)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:33:58 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 113ms (Views: 2.5ms | Allocations: 316)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:33:58 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 5ms (Views: 0.5ms | Allocations: 316)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-01 20:34:32 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Audi", "type"=>"SUV", "model"=>"Q5", "manufacturer_id"=>"1", "cars"=>[{"id"=>6, "make"=>"BMW", "type"=>"Coupe", "model"=>"M2", "manufacturer_id"=>1}], "car"=>{"make"=>"Audi", "type"=>"SUV", "model"=>"Q5", "manufacturer_id"=>"1"}}
+Completed 200 OK in 25ms (Views: 0.7ms | Allocations: 374)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:34:32 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.5ms | Allocations: 363)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:39:20 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 15ms (Views: 2.4ms | Allocations: 364)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:40:14 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.4ms | Allocations: 363)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:40:33 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 1.3ms | Allocations: 363)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:55:09 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 20ms (Views: 4.5ms | Allocations: 364)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:56:51 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 11ms (Views: 1.6ms | Allocations: 363)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-02-01 20:59:17 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 20:59:54 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 7ms (Views: 1.5ms | Allocations: 364)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 21:09:27 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 11ms (Views: 1.2ms | Allocations: 363)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 21:11:24 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 8ms (Views: 3.9ms | Allocations: 363)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 21:12:10 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 12ms (Views: 3.0ms | Allocations: 363)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 21:13:00 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.6ms | Allocations: 363)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 21:13:10 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 7ms (Views: 4.1ms | Allocations: 363)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 21:13:33 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.4ms | Allocations: 364)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 21:18:11 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 134ms (Views: 1.8ms | Allocations: 364)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 21:26:39 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 9ms (Views: 1.6ms | Allocations: 363)
+
+
+Started GET "/car%20image" for 127.0.0.1 at 2021-02-01 21:26:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/car%20image"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-01 21:27:52 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 24ms (Views: 4.1ms | Allocations: 363)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 21:37:17 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 20ms (Views: 3.2ms | Allocations: 363)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-01 21:42:09 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Nissan", "type"=>"Coupe", "model"=>"GT-R", "manufacturer_id"=>"3", "cars"=>[{"id"=>6, "make"=>"BMW", "type"=>"Coupe", "model"=>"M2", "manufacturer_id"=>1}, {"id"=>7, "make"=>"Audi", "type"=>"SUV", "model"=>"Q5", "manufacturer_id"=>1}], "car"=>{"make"=>"Nissan", "type"=>"Coupe", "model"=>"GT-R", "manufacturer_id"=>"3"}}
+Completed 200 OK in 25ms (Views: 1.1ms | Allocations: 374)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 21:42:10 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.4ms | Allocations: 410)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-01 21:42:27 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Honda", "type"=>"Sedan", "model"=>"Civic Type-R", "manufacturer_id"=>"4", "cars"=>[{"id"=>6, "make"=>"BMW", "type"=>"Coupe", "model"=>"M2", "manufacturer_id"=>1}, {"id"=>7, "make"=>"Audi", "type"=>"SUV", "model"=>"Q5", "manufacturer_id"=>1}, {"id"=>8, "make"=>"Nissan", "type"=>"Coupe", "model"=>"GT-R", "manufacturer_id"=>3}], "car"=>{"make"=>"Honda", "type"=>"Sedan", "model"=>"Civic Type-R", "manufacturer_id"=>"4"}}
+Completed 200 OK in 12ms (Views: 0.3ms | Allocations: 375)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 21:42:28 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 7ms (Views: 1.4ms | Allocations: 457)
+
+
+Started GET "/" for ::1 at 2021-02-01 22:52:12 -0700
+  [1m[35m (9.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Jas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Jas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 17.4ms | Allocations: 337)
+Completed 200 OK in 66ms (Views: 32.0ms | ActiveRecord: 0.0ms | Allocations: 2447)
+
+
+Started GET "/car" for ::1 at 2021-02-01 22:52:14 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 55ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 858)
+
+
+Started GET "/" for ::1 at 2021-02-01 22:52:34 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Jas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Jas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 21.5ms | Allocations: 222)
+Completed 200 OK in 31ms (Views: 23.7ms | ActiveRecord: 0.0ms | Allocations: 836)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 22:53:24 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 457)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 22:54:56 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 9ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 457)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 22:55:05 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 460)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 22:55:44 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 457)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 22:59:41 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 8ms (Views: 0.4ms | Allocations: 457)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 23:00:25 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 7ms (Views: 4.4ms | Allocations: 457)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 23:03:28 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.3ms | Allocations: 457)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 23:05:09 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 5ms (Views: 2.1ms | Allocations: 457)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 23:05:24 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.3ms | Allocations: 459)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 23:05:40 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.6ms | Allocations: 458)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 23:07:35 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.8ms | Allocations: 458)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 23:07:36 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.9ms | Allocations: 457)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 23:16:17 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 13ms (Views: 3.0ms | Allocations: 457)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 23:17:07 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 1.0ms | Allocations: 457)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 23:21:25 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 1.1ms | Allocations: 458)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 23:24:00 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 14ms (Views: 5.7ms | Allocations: 457)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 23:25:07 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 9ms (Views: 6.7ms | Allocations: 457)
+
+
+Started DELETE "/car/6" for 127.0.0.1 at 2021-02-01 23:28:21 -0700
+Processing by CarController#delete as HTML
+  Parameters: {"id"=>"6"}
+Completed 200 OK in 77ms (Views: 0.3ms | Allocations: 278)
+
+
+MiniProfiler storage failure: No space left on device @ io_write - /Users/Jas/Documents/projects/project_4/Back_end/auto-stop/tmp/miniprofiler/mp_timers_comqq9mhglkpvfjfo2nr
+Started GET "/car" for 127.0.0.1 at 2021-02-01 23:28:21 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 2.7ms | Allocations: 410)
+
+
+MiniProfiler storage failure: No space left on device @ io_write - /Users/Jas/Documents/projects/project_4/Back_end/auto-stop/tmp/miniprofiler/mp_timers_j59ex6oz36qc6230n9j0
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:03:25 -0700
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.0) lib/puma/configuration.rb:247:in `call'
+puma (5.2.0) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.0) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.0) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.0) lib/puma/server.rb:432:in `process_client'
+puma (5.2.0) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:03:51 -0700
+  [1m[35m (12.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarController#index as HTML
+Completed 200 OK in 52ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 1605)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-02-02 09:27:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:28:05 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 18ms (Views: 3.7ms | Allocations: 414)
+
+
+Started GET "/car%20image" for 127.0.0.1 at 2021-02-02 09:28:05 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/car%20image"):
+  
+Started DELETE "/car/7" for 127.0.0.1 at 2021-02-02 09:28:14 -0700
+Processing by CarController#delete as HTML
+  Parameters: {"id"=>"7"}
+Completed 200 OK in 27ms (Views: 0.3ms | Allocations: 278)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:28:14 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 365)
+
+
+Started DELETE "/car/8" for 127.0.0.1 at 2021-02-02 09:28:15 -0700
+Processing by CarController#delete as HTML
+  Parameters: {"id"=>"8"}
+Completed 200 OK in 5ms (Views: 0.3ms | Allocations: 278)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:28:15 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | Allocations: 318)
+
+
+Started DELETE "/car/9" for 127.0.0.1 at 2021-02-02 09:28:16 -0700
+Processing by CarController#delete as HTML
+  Parameters: {"id"=>"9"}
+Completed 200 OK in 4ms (Views: 0.2ms | Allocations: 278)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:28:16 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 264)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:30:23 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 5ms (Views: 0.2ms | Allocations: 264)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:30:38 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 264)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-02 09:34:04 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Nissan", "type"=>"Coupe", "model"=>"370z Nismo", "manufacturer_id"=>"1", "price"=>"32000", "image"=>"https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/98447748_10158376561024462_652191368013152256_o.jpg?_nc_cat=100&ccb=2&_nc_sid=19026a&_nc_ohc=MenKtUv7tRsAX80AysW&_nc_oc=AQk34wPOglSSRjJCRqCbcp8at1ykhWOl6cUXC_lmVMNVmAzQ2OYw4se8p_MnpWDtCe1-pqBOe0mcwnitRjnQRGkl&_nc_ht=scontent.fapa1-2.fna&oh=8b4a8e8ff80f01426a266fff0a7358ab&oe=603FF809", "cars"=>[], "car"=>{"make"=>"Nissan", "type"=>"Coupe", "model"=>"370z Nismo", "manufacturer_id"=>"1", "price"=>"32000", "image"=>"https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/98447748_10158376561024462_652191368013152256_o.jpg?_nc_cat=100&ccb=2&_nc_sid=19026a&_nc_ohc=MenKtUv7tRsAX80AysW&_nc_oc=AQk34wPOglSSRjJCRqCbcp8at1ykhWOl6cUXC_lmVMNVmAzQ2OYw4se8p_MnpWDtCe1-pqBOe0mcwnitRjnQRGkl&_nc_ht=scontent.fapa1-2.fna&oh=8b4a8e8ff80f01426a266fff0a7358ab&oe=603FF809"}}
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 102.3ms | Allocations: 375)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:34:04 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 318)
+
+
+Started GET "/car%20image" for 127.0.0.1 at 2021-02-02 09:34:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/car%20image"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:34:44 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 319)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:35:06 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 319)
+
+
+Started GET "/%7Bcar.image%7D" for 127.0.0.1 at 2021-02-02 09:35:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%7Bcar.image%7D"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:35:44 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 319)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:37:26 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 318)
+
+
+Started GET "/%7Bcar.image%7D" for 127.0.0.1 at 2021-02-02 09:37:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%7Bcar.image%7D"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:37:27 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 318)
+
+
+Started GET "/%7Bcar.image%7D" for 127.0.0.1 at 2021-02-02 09:37:28 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%7Bcar.image%7D"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:45:31 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 31ms (Views: 1.0ms | Allocations: 1083)
+
+
+Started GET "/%7Bcar.image%7D" for 127.0.0.1 at 2021-02-02 09:45:32 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%7Bcar.image%7D"):
+  
+Started DELETE "/car/41" for 127.0.0.1 at 2021-02-02 09:45:35 -0700
+Processing by CarController#delete as HTML
+  Parameters: {"id"=>"41"}
+Completed 200 OK in 10ms (Views: 0.2ms | Allocations: 276)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:45:35 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | Allocations: 264)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-02 09:46:11 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Nissan", "type"=>"Coupe", "model"=>"370z Nismo", "manufacturer_id"=>"1", "price"=>"35000", "image"=>"https://www.edmunds.com/nissan/370z/2020/nismo/", "cars"=>[], "car"=>{"make"=>"Nissan", "type"=>"Coupe", "model"=>"370z Nismo", "manufacturer_id"=>"1", "price"=>"35000", "image"=>"https://www.edmunds.com/nissan/370z/2020/nismo/"}}
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 26.3ms | Allocations: 428)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:46:11 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 335)
+
+
+Started GET "/%7Bcar.image%7D" for 127.0.0.1 at 2021-02-02 09:46:12 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%7Bcar.image%7D"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:46:40 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 336)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:47:39 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 335)
+
+
+Started GET "/%7Bcar.image%7D" for 127.0.0.1 at 2021-02-02 09:47:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%7Bcar.image%7D"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:48:19 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 9ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 335)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:49:26 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 335)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-02 09:51:28 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Nissan", "type"=>"Coupe", "model"=>"370z Nismo", "manufacturer_id"=>"1", "price"=>"35000", "image"=>"https://s.aolcdn.com/commerce/autodata/images/USC60NIC141F121001.jpg", "cars"=>[{"id"=>42, "make"=>"Nissan", "type"=>"Coupe", "model"=>"370z Nismo", "manufacturer_id"=>1, "price"=>35000, "image"=>"https://www.edmunds.com/nissan/370z/2020/nismo/"}], "car"=>{"make"=>"Nissan", "type"=>"Coupe", "model"=>"370z Nismo", "manufacturer_id"=>"1", "price"=>"35000", "image"=>"https://s.aolcdn.com/commerce/autodata/images/USC60NIC141F121001.jpg"}}
+Completed 200 OK in 6ms (Views: 0.3ms | Allocations: 428)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:51:28 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.5ms | Allocations: 400)
+
+
+Started DELETE "/car/42" for 127.0.0.1 at 2021-02-02 09:52:34 -0700
+Processing by CarController#delete as HTML
+  Parameters: {"id"=>"42"}
+Completed 200 OK in 5ms (Views: 0.3ms | Allocations: 276)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:52:34 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.8ms | Allocations: 335)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:53:16 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.8ms | Allocations: 335)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:53:36 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | Allocations: 335)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-02 09:53:48 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.5ms | Allocations: 335)
+
+

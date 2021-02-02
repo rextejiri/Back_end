@@ -8,7 +8,9 @@ class Car < ApplicationRecord
         "make" => result["make"],
         "type" => result["type"],
         "model" => result["model"],
-        "manufacturer_id" => result["manufacturer_id"].to_i
+        "manufacturer_id" => result["manufacturer_id"].to_i,
+        "price" => result["price"].to_i,
+        "image" => result["image"]
       }
     end
   end
@@ -20,17 +22,19 @@ class Car < ApplicationRecord
       "make" => results.first["make"],
       "type" => results.first["type"],
       "model" => results.first["model"],
-      "manufacturer_id" => results.first["manufacturer_id"].to_i
+      "manufacturer_id" => results.first["manufacturer_id"].to_i,
+      "price" => results.first["price"].to_i,
+      "image" => results.first["image"]
     }
   end
 
   def self.create(body)
     results = DB.exec(
       <<-SQL
-      INSERT INTO cars (make, type, model, manufacturer_id)
+      INSERT INTO cars (make, type, model, manufacturer_id, price, image)
       VALUES('#{body["make"]}', '#{body["type"]}',
-      '#{body["model"]}', '#{body["manufacturer_id"]}')
-      RETURNING id, make, type, model, manufacturer_id
+      '#{body["model"]}', '#{body["manufacturer_id"]}', '#{body["price"]}', '#{body["image"]}')
+      RETURNING id, make, type, model, manufacturer_id, price, image
       SQL
     )
     return{
@@ -38,7 +42,9 @@ class Car < ApplicationRecord
       "make" => results.first["make"],
       "type" => results.first["type"],
       "model" => results.first["model"],
-      "manufacturer_id" => results.first["manufacturer_id"].to_i
+      "manufacturer_id" => results.first["manufacturer_id"].to_i,
+      "price" => results.first["price"].to_i,
+      "image" => results.first["image"]
     }
   end
 
@@ -52,9 +58,9 @@ class Car < ApplicationRecord
     <<-SQL
       UPDATE cars
       SET make='#{body["make"]}', type='#{body["type"]}',
-      model='#{body["model"]}', manufacturer_id=#{body["manufacturer_id"]}
+      model='#{body["model"]}', manufacturer_id=#{body["manufacturer_id"]}, price=#{body["price"]}, image='#{body["image"]}'
       WHERE id=#{id}
-      RETURNING id, make, model, manufacturer_id;
+      RETURNING id, make, model, manufacturer_id, price, image;
     SQL
     )
     return{
@@ -62,7 +68,9 @@ class Car < ApplicationRecord
       "make" => results.first["make"],
       "type" => results.first["type"],
       "model" => results.first["model"],
-      "manufacturer_id" => results.first["manufacturer_id"].to_i
+      "manufacturer_id" => results.first["manufacturer_id"].to_i,
+      "price" => results.first["price"].to_i,
+      "image" => results.first["image"]
     }
   end
 
@@ -76,9 +84,9 @@ class Car < ApplicationRecord
       <<-SQL
         UPDATE cars
         SET make='#{body["make"]}', type='#{body["type"]}',
-        model='#{body["model"]}', manufacturer_id=#{body["manufacturer_id"]}
+        model='#{body["model"]}', manufacturer_id=#{body["manufacturer_id"]}, price=#{body["price"]}, image='#{body["image"]}'
         WHERE id=#{id}
-        RETURNING id, make, model, manufacturer_id;
+        RETURNING id, make, model, manufacturer_id, price, image;
       SQL
     )
     return{
@@ -86,7 +94,9 @@ class Car < ApplicationRecord
       "make" => results.first["make"],
       "type" => results.first["type"],
       "model" => results.first["model"],
-      "manufacturer_id" => results.first["manufacturer_id"].to_i
+      "manufacturer_id" => results.first["manufacturer_id"].to_i,
+      "price" => results.first["price"].to_i,
+      "image" => results.first["image"]
     }
   end
 

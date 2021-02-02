@@ -20,15 +20,11 @@ ActiveRecord::Schema.define(version: 2021_01_31_121144) do
     t.string "type"
     t.string "model"
     t.integer "manufacturer_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "manufacturers", force: :cascade do |t|
     t.string "country"
     t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
