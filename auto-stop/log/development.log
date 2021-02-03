@@ -1696,3 +1696,154 @@ Started POST "/car" for ::1 at 2021-02-01 08:14:49 -0600
 Processing by CarController#create as */*
   Parameters: {"make"=>"bmw", "type"=>"Convertible", "model"=>"Luxury", "manufacturer_id"=>"2", "car"=>{"make"=>"bmw", "type"=>"Convertible", "model"=>"Luxury", "manufacturer_id"=>"2"}}
 Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 18.6ms | Allocations: 419)
+Started GET "/car" for 127.0.0.1 at 2021-02-01 17:17:30 -0600
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarController#index as HTML
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2295)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-01 17:18:27 -0600
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Benz", "type"=>"Car", "model"=>"SUV", "cars"=>[{"id"=>7, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}, {"id"=>8, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}], "car"=>{"make"=>"Benz", "type"=>"Car", "model"=>"SUV"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 2.9ms | Allocations: 523)
+
+
+  
+PG::InvalidTextRepresentation (ERROR:  invalid input syntax for type integer: ""
+LINE 3:       'SUV', '')
+                     ^
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started GET "/car" for ::1 at 2021-02-01 17:18:48 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 432)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-01 17:21:45 -0600
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Benz", "type"=>"car", "model"=>"SUV", "cars"=>[{"id"=>7, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}, {"id"=>8, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}], "car"=>{"make"=>"Benz", "type"=>"car", "model"=>"SUV"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 541)
+
+
+  
+PG::InvalidTextRepresentation (ERROR:  invalid input syntax for type integer: ""
+LINE 3:       'SUV', '')
+                     ^
+):
+  
+app/models/car.rb:28:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started GET "/car" for 127.0.0.1 at 2021-02-01 17:24:36 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.4ms | Allocations: 363)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-01 17:24:46 -0600
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Benz", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>"3", "cars"=>[{"id"=>7, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}, {"id"=>8, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}], "car"=>{"make"=>"Benz", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>"3"}}
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 378)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 17:24:46 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 410)
+
+
+Started DELETE "/car/9" for 127.0.0.1 at 2021-02-01 17:25:05 -0600
+Processing by CarController#delete as HTML
+  Parameters: {"id"=>"9"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 276)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 17:25:05 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 363)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-01 17:35:15 -0600
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Benz", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>"3", "cars"=>[{"id"=>7, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}, {"id"=>8, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}], "car"=>{"make"=>"Benz", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>"3"}}
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 377)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 17:35:15 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 410)
+
+
+Started PUT "/car/10" for 127.0.0.1 at 2021-02-01 18:01:10 -0600
+Processing by CarController#update as HTML
+  Parameters: {"make"=>"Benz", "type"=>"Candy", "model"=>"SUV", "manufacturer_id"=>"", "cars"=>[{"id"=>7, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}, {"id"=>8, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}, {"id"=>10, "make"=>"Benz", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>3}], "id"=>"10", "car"=>{"make"=>"Benz", "type"=>"Candy", "model"=>"SUV", "manufacturer_id"=>""}}
+Completed 500 Internal Server Error in 1ms (Allocations: 534)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "WHERE"
+LINE 4:         WHERE id=10
+                ^
+):
+  
+app/models/car.rb:75:in `update'
+app/controllers/car_controller.rb:24:in `update'
+Started PUT "/car/10" for 127.0.0.1 at 2021-02-01 18:01:21 -0600
+Processing by CarController#update as HTML
+  Parameters: {"make"=>"Benz", "type"=>"Candy", "model"=>"SUV", "manufacturer_id"=>"", "cars"=>[{"id"=>7, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}, {"id"=>8, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}, {"id"=>10, "make"=>"Benz", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>3}], "id"=>"10", "car"=>{"make"=>"Benz", "type"=>"Candy", "model"=>"SUV", "manufacturer_id"=>""}}
+Completed 500 Internal Server Error in 1ms (Allocations: 534)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "WHERE"
+LINE 4:         WHERE id=10
+                ^
+):
+  
+app/models/car.rb:75:in `update'
+app/controllers/car_controller.rb:24:in `update'
+Started DELETE "/car/10" for 127.0.0.1 at 2021-02-01 18:01:34 -0600
+Processing by CarController#delete as HTML
+  Parameters: {"id"=>"10"}
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 276)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 18:01:34 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 363)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 18:02:34 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 364)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 18:02:35 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.3ms | Allocations: 363)
+
+
+Started PUT "/car/8" for 127.0.0.1 at 2021-02-01 18:02:47 -0600
+Processing by CarController#update as HTML
+  Parameters: {"make"=>"Benz", "type"=>"water", "model"=>"SUV", "manufacturer_id"=>"3", "cars"=>[{"id"=>7, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}, {"id"=>8, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}], "id"=>"8", "car"=>{"make"=>"Benz", "type"=>"water", "model"=>"SUV", "manufacturer_id"=>"3"}}
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 365)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-01 18:02:47 -0600
+Processing by CarController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 363)
+
+
+Started PUT "/car/8" for 127.0.0.1 at 2021-02-02 10:03:51 -0600
+Processing by CarController#update as HTML
+  Parameters: {"make"=>"", "type"=>"", "model"=>"", "manufacturer_id"=>"", "cars"=>[{"id"=>7, "make"=>"BMW", "type"=>"Car", "model"=>"SUV", "manufacturer_id"=>2}, {"id"=>8, "make"=>"Benz", "type"=>"water", "model"=>"SUV", "manufacturer_id"=>3}], "id"=>"8", "car"=>{"make"=>"", "type"=>"", "model"=>"", "manufacturer_id"=>""}}
+Completed 500 Internal Server Error in 1ms (Allocations: 534)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "WHERE"
+LINE 4:         WHERE id=8
+                ^
+):
+  
+app/models/car.rb:75:in `update'
+app/controllers/car_controller.rb:24:in `update'
