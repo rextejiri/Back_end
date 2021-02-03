@@ -20,6 +20,10 @@ ActiveRecord::Schema.define(version: 2021_01_31_121144) do
     t.string "type"
     t.string "model"
     t.integer "manufacturer_id"
+    t.integer "price"
+    t.string "image"
+    t.integer "mileage"
+    t.srting "about"
   end
 
   create_table "manufacturers", force: :cascade do |t|
