@@ -5814,3 +5814,314 @@ LINE 3:       '', , , '', , '')
   
 app/models/car.rb:36:in `create'
 app/controllers/car_controller.rb:15:in `create'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-02-03 00:23:44 -0700
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-02-03 00:24:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/car" for 127.0.0.1 at 2021-02-03 00:27:35 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 65ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 1661)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-03 00:31:55 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 15ms (Views: 3.1ms | Allocations: 442)
+
+
+Started DELETE "/car/53" for 127.0.0.1 at 2021-02-03 00:31:59 -0700
+Processing by CarController#delete as HTML
+  Parameters: {"id"=>"53"}
+Completed 200 OK in 8ms (Views: 0.4ms | Allocations: 278)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-03 00:31:59 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 3ms (Views: 0.8ms | Allocations: 362)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:32:19 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger", "cars"=>[{"id"=>43, "make"=>"Nissan", "type"=>"car", "model"=>"prius", "manufacturer_id"=>1, "price"=>199, "image"=>"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", "mileage"=>12000, "about"=>""}], "car"=>{"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 45.0ms | Allocations: 524)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "s"
+LINE 3: ...9620d35412b/2019kiastingergt-002.jpg', 12000, 'it's a kia st...
+                                                             ^
+):
+  
+app/models/car.rb:36:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:32:21 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger", "cars"=>[{"id"=>43, "make"=>"Nissan", "type"=>"car", "model"=>"prius", "manufacturer_id"=>1, "price"=>199, "image"=>"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", "mileage"=>12000, "about"=>""}], "car"=>{"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 537)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "s"
+LINE 3: ...9620d35412b/2019kiastingergt-002.jpg', 12000, 'it's a kia st...
+                                                             ^
+):
+  
+app/models/car.rb:36:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:32:21 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger", "cars"=>[{"id"=>43, "make"=>"Nissan", "type"=>"car", "model"=>"prius", "manufacturer_id"=>1, "price"=>199, "image"=>"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", "mileage"=>12000, "about"=>""}], "car"=>{"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 537)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "s"
+LINE 3: ...9620d35412b/2019kiastingergt-002.jpg', 12000, 'it's a kia st...
+                                                             ^
+):
+  
+app/models/car.rb:36:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:32:21 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger", "cars"=>[{"id"=>43, "make"=>"Nissan", "type"=>"car", "model"=>"prius", "manufacturer_id"=>1, "price"=>199, "image"=>"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", "mileage"=>12000, "about"=>""}], "car"=>{"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 729)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "s"
+LINE 3: ...9620d35412b/2019kiastingergt-002.jpg', 12000, 'it's a kia st...
+                                                             ^
+):
+  
+app/models/car.rb:36:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:32:22 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger", "cars"=>[{"id"=>43, "make"=>"Nissan", "type"=>"car", "model"=>"prius", "manufacturer_id"=>1, "price"=>199, "image"=>"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", "mileage"=>12000, "about"=>""}], "car"=>{"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1147)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "s"
+LINE 3: ...9620d35412b/2019kiastingergt-002.jpg', 12000, 'it's a kia st...
+                                                             ^
+):
+  
+app/models/car.rb:36:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:32:22 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger", "cars"=>[{"id"=>43, "make"=>"Nissan", "type"=>"car", "model"=>"prius", "manufacturer_id"=>1, "price"=>199, "image"=>"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", "mileage"=>12000, "about"=>""}], "car"=>{"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger"}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2495)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "s"
+LINE 3: ...9620d35412b/2019kiastingergt-002.jpg', 12000, 'it's a kia st...
+                                                             ^
+):
+  
+app/models/car.rb:36:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:32:22 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger", "cars"=>[{"id"=>43, "make"=>"Nissan", "type"=>"car", "model"=>"prius", "manufacturer_id"=>1, "price"=>199, "image"=>"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", "mileage"=>12000, "about"=>""}], "car"=>{"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1666)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "s"
+LINE 3: ...9620d35412b/2019kiastingergt-002.jpg', 12000, 'it's a kia st...
+                                                             ^
+):
+  
+app/models/car.rb:36:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:32:22 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger", "cars"=>[{"id"=>43, "make"=>"Nissan", "type"=>"car", "model"=>"prius", "manufacturer_id"=>1, "price"=>199, "image"=>"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", "mileage"=>12000, "about"=>""}], "car"=>{"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1603)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "s"
+LINE 3: ...9620d35412b/2019kiastingergt-002.jpg', 12000, 'it's a kia st...
+                                                             ^
+):
+  
+app/models/car.rb:36:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:32:22 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger", "cars"=>[{"id"=>43, "make"=>"Nissan", "type"=>"car", "model"=>"prius", "manufacturer_id"=>1, "price"=>199, "image"=>"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", "mileage"=>12000, "about"=>""}], "car"=>{"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1595)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "s"
+LINE 3: ...9620d35412b/2019kiastingergt-002.jpg', 12000, 'it's a kia st...
+                                                             ^
+):
+  
+app/models/car.rb:36:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:32:45 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger", "cars"=>[{"id"=>43, "make"=>"Nissan", "type"=>"car", "model"=>"prius", "manufacturer_id"=>1, "price"=>199, "image"=>"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", "mileage"=>12000, "about"=>""}], "car"=>{"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 537)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "s"
+LINE 3: ...9620d35412b/2019kiastingergt-002.jpg', 12000, 'it's a kia st...
+                                                             ^
+):
+  
+app/models/car.rb:36:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started PUT "/car/43" for 127.0.0.1 at 2021-02-03 00:33:00 -0700
+Processing by CarController#update as HTML
+  Parameters: {"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger", "cars"=>[{"id"=>43, "make"=>"Nissan", "type"=>"car", "model"=>"prius", "manufacturer_id"=>1, "price"=>199, "image"=>"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", "mileage"=>12000, "about"=>""}], "id"=>"43", "car"=>{"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"it's a kia stinger"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 538)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "s"
+LINE 3: ...19kiastingergt-002.jpg', mileage=12000, about='it's a kia st...
+                                                             ^
+):
+  
+app/models/car.rb:91:in `update'
+app/controllers/car_controller.rb:24:in `update'
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:35:08 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"what", "cars"=>[{"id"=>43, "make"=>"Nissan", "type"=>"car", "model"=>"prius", "manufacturer_id"=>1, "price"=>199, "image"=>"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", "mileage"=>12000, "about"=>""}], "car"=>{"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"what"}}
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 489)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-03 00:35:08 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 440)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:35:20 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"", "type"=>"", "model"=>"", "manufacturer_id"=>"", "price"=>"", "image"=>"", "mileage"=>"", "about"=>"this car is really ", "cars"=>[{"id"=>43, "make"=>"Nissan", "type"=>"car", "model"=>"prius", "manufacturer_id"=>1, "price"=>199, "image"=>"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", "mileage"=>12000, "about"=>""}, {"id"=>54, "make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>2, "price"=>199, "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>12000, "about"=>"what"}], "car"=>{"make"=>"", "type"=>"", "model"=>"", "manufacturer_id"=>"", "price"=>"", "image"=>"", "mileage"=>"", "about"=>"this car is really "}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 537)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 3:       '', , , '', , 'this car is really ')
+                  ^
+):
+  
+app/models/car.rb:36:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started PUT "/car/54" for 127.0.0.1 at 2021-02-03 00:35:44 -0700
+Processing by CarController#update as HTML
+  Parameters: {"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"This car is really fun!", "cars"=>[{"id"=>43, "make"=>"Nissan", "type"=>"car", "model"=>"prius", "manufacturer_id"=>1, "price"=>199, "image"=>"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80", "mileage"=>12000, "about"=>""}, {"id"=>54, "make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>2, "price"=>199, "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>12000, "about"=>"what"}], "id"=>"54", "car"=>{"make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>"2", "price"=>"199", "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>"12000", "about"=>"This car is really fun!"}}
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 475)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-03 00:35:44 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 440)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-03 00:36:36 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 13ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 441)
+
+
+Started DELETE "/car/43" for 127.0.0.1 at 2021-02-03 00:36:41 -0700
+Processing by CarController#delete as HTML
+  Parameters: {"id"=>"43"}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 276)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-03 00:36:41 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 353)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:38:39 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"BMW", "type"=>"Coupe", "model"=>"M2", "manufacturer_id"=>"1", "price"=>"42000", "image"=>"https://cdn.carbuzz.com/gallery-images/1600/697000/800/697890.jpg", "mileage"=>"14000", "about"=>"Very clean car, always kept in a garage and oil changes done every 5,000 miles.", "cars"=>[{"id"=>54, "make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>2, "price"=>199, "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>12000, "about"=>"This car is really fun!"}], "car"=>{"make"=>"BMW", "type"=>"Coupe", "model"=>"M2", "manufacturer_id"=>"1", "price"=>"42000", "image"=>"https://cdn.carbuzz.com/gallery-images/1600/697000/800/697890.jpg", "mileage"=>"14000", "about"=>"Very clean car, always kept in a garage and oil changes done every 5,000 miles."}}
+Completed 200 OK in 4ms (Views: 0.5ms | Allocations: 490)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-03 00:38:40 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.5ms | Allocations: 434)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:38:41 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"", "type"=>"", "model"=>"", "manufacturer_id"=>"", "price"=>"", "image"=>"", "mileage"=>"", "about"=>"", "cars"=>[{"id"=>54, "make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>2, "price"=>199, "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>12000, "about"=>"This car is really fun!"}, {"id"=>55, "make"=>"BMW", "type"=>"Coupe", "model"=>"M2", "manufacturer_id"=>1, "price"=>42000, "image"=>"https://cdn.carbuzz.com/gallery-images/1600/697000/800/697890.jpg", "mileage"=>14000, "about"=>"Very clean car, always kept in a garage and oil changes done every 5,000 miles."}], "car"=>{"make"=>"", "type"=>"", "model"=>"", "manufacturer_id"=>"", "price"=>"", "image"=>"", "mileage"=>"", "about"=>""}}
+Completed 500 Internal Server Error in 5ms (Allocations: 537)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 3:       '', , , '', , '')
+                  ^
+):
+  
+app/models/car.rb:36:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:39:58 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Nissan", "type"=>"Coupe", "model"=>"370Z Nismo", "manufacturer_id"=>"3", "price"=>"35000", "image"=>"https://performancedrive.com.au/wp-content/uploads/2018/01/2018-Nissan-370Z-Nismo-white.jpg", "mileage"=>"9000", "about"=>"Full front end PPF wrap, garage kept, manual, and lowered on Swift springs.", "cars"=>[{"id"=>54, "make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>2, "price"=>199, "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>12000, "about"=>"This car is really fun!"}, {"id"=>55, "make"=>"BMW", "type"=>"Coupe", "model"=>"M2", "manufacturer_id"=>1, "price"=>42000, "image"=>"https://cdn.carbuzz.com/gallery-images/1600/697000/800/697890.jpg", "mileage"=>14000, "about"=>"Very clean car, always kept in a garage and oil changes done every 5,000 miles."}], "car"=>{"make"=>"Nissan", "type"=>"Coupe", "model"=>"370Z Nismo", "manufacturer_id"=>"3", "price"=>"35000", "image"=>"https://performancedrive.com.au/wp-content/uploads/2018/01/2018-Nissan-370Z-Nismo-white.jpg", "mileage"=>"9000", "about"=>"Full front end PPF wrap, garage kept, manual, and lowered on Swift springs."}}
+Completed 200 OK in 5ms (Views: 0.7ms | Allocations: 490)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-03 00:39:58 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.3ms | Allocations: 515)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:40:00 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"", "type"=>"", "model"=>"", "manufacturer_id"=>"", "price"=>"", "image"=>"", "mileage"=>"", "about"=>"", "cars"=>[{"id"=>54, "make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>2, "price"=>199, "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>12000, "about"=>"This car is really fun!"}, {"id"=>55, "make"=>"BMW", "type"=>"Coupe", "model"=>"M2", "manufacturer_id"=>1, "price"=>42000, "image"=>"https://cdn.carbuzz.com/gallery-images/1600/697000/800/697890.jpg", "mileage"=>14000, "about"=>"Very clean car, always kept in a garage and oil changes done every 5,000 miles."}, {"id"=>56, "make"=>"Nissan", "type"=>"Coupe", "model"=>"370Z Nismo", "manufacturer_id"=>3, "price"=>35000, "image"=>"https://performancedrive.com.au/wp-content/uploads/2018/01/2018-Nissan-370Z-Nismo-white.jpg", "mileage"=>9000, "about"=>"Full front end PPF wrap, garage kept, manual, and lowered on Swift springs."}], "car"=>{"make"=>"", "type"=>"", "model"=>"", "manufacturer_id"=>"", "price"=>"", "image"=>"", "mileage"=>"", "about"=>""}}
+Completed 500 Internal Server Error in 5ms (Allocations: 537)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 3:       '', , , '', , '')
+                  ^
+):
+  
+app/models/car.rb:36:in `create'
+app/controllers/car_controller.rb:15:in `create'
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:41:41 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"Audi", "type"=>"Avant", "model"=>"S4", "manufacturer_id"=>"4", "price"=>"15000", "image"=>"https://i.ytimg.com/vi/KgAJ9UqR5QM/maxresdefault.jpg", "mileage"=>"110000", "about"=>"Very clean exmaple of a B5 S4 in Nogaro blue.", "cars"=>[{"id"=>54, "make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>2, "price"=>199, "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>12000, "about"=>"This car is really fun!"}, {"id"=>55, "make"=>"BMW", "type"=>"Coupe", "model"=>"M2", "manufacturer_id"=>1, "price"=>42000, "image"=>"https://cdn.carbuzz.com/gallery-images/1600/697000/800/697890.jpg", "mileage"=>14000, "about"=>"Very clean car, always kept in a garage and oil changes done every 5,000 miles."}, {"id"=>56, "make"=>"Nissan", "type"=>"Coupe", "model"=>"370Z Nismo", "manufacturer_id"=>3, "price"=>35000, "image"=>"https://performancedrive.com.au/wp-content/uploads/2018/01/2018-Nissan-370Z-Nismo-white.jpg", "mileage"=>9000, "about"=>"Full front end PPF wrap, garage kept, manual, and lowered on Swift springs."}], "car"=>{"make"=>"Audi", "type"=>"Avant", "model"=>"S4", "manufacturer_id"=>"4", "price"=>"15000", "image"=>"https://i.ytimg.com/vi/KgAJ9UqR5QM/maxresdefault.jpg", "mileage"=>"110000", "about"=>"Very clean exmaple of a B5 S4 in Nogaro blue."}}
+Completed 200 OK in 5ms (Views: 0.4ms | Allocations: 489)
+
+
+Started GET "/car" for 127.0.0.1 at 2021-02-03 00:41:41 -0700
+Processing by CarController#index as HTML
+Completed 200 OK in 2ms (Views: 0.5ms | Allocations: 597)
+
+
+Started POST "/car" for 127.0.0.1 at 2021-02-03 00:41:41 -0700
+Processing by CarController#create as HTML
+  Parameters: {"make"=>"", "type"=>"", "model"=>"", "manufacturer_id"=>"", "price"=>"", "image"=>"", "mileage"=>"", "about"=>"", "cars"=>[{"id"=>54, "make"=>"Kia", "type"=>"Coupe", "model"=>"Stinger", "manufacturer_id"=>2, "price"=>199, "image"=>"https://cnet2.cbsistatic.com/img/P7Q8_-GMsHPkjiG-JVdoUcxNE_Q=/1200x675/2019/10/30/44b99ebf-1b73-4ca6-ad7e-59620d35412b/2019kiastingergt-002.jpg", "mileage"=>12000, "about"=>"This car is really fun!"}, {"id"=>55, "make"=>"BMW", "type"=>"Coupe", "model"=>"M2", "manufacturer_id"=>1, "price"=>42000, "image"=>"https://cdn.carbuzz.com/gallery-images/1600/697000/800/697890.jpg", "mileage"=>14000, "about"=>"Very clean car, always kept in a garage and oil changes done every 5,000 miles."}, {"id"=>56, "make"=>"Nissan", "type"=>"Coupe", "model"=>"370Z Nismo", "manufacturer_id"=>3, "price"=>35000, "image"=>"https://performancedrive.com.au/wp-content/uploads/2018/01/2018-Nissan-370Z-Nismo-white.jpg", "mileage"=>9000, "about"=>"Full front end PPF wrap, garage kept, manual, and lowered on Swift springs."}, {"id"=>57, "make"=>"Audi", "type"=>"Avant", "model"=>"S4", "manufacturer_id"=>4, "price"=>15000, "image"=>"https://i.ytimg.com/vi/KgAJ9UqR5QM/maxresdefault.jpg", "mileage"=>110000, "about"=>"Very clean exmaple of a B5 S4 in Nogaro blue."}], "car"=>{"make"=>"", "type"=>"", "model"=>"", "manufacturer_id"=>"", "price"=>"", "image"=>"", "mileage"=>"", "about"=>""}}
+Completed 500 Internal Server Error in 5ms (Allocations: 537)
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 3:       '', , , '', , '')
+                  ^
+):
+  
+app/models/car.rb:36:in `create'
+app/controllers/car_controller.rb:15:in `create'
